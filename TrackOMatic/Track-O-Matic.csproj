@@ -43,22 +43,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AutoTracking\OffsetInfo.cs" />
-    <Compile Include="AutoTracking\Autotracker.cs" />
-    <Compile Include="AutoTracking\AttachToEmulator.cs" />
-    <Compile Include="AutoTracking\EmulatorName.cs" />
-    <Compile Include="AutoTracking\Memory.cs" />
-    <Compile Include="AutoTracking\AutotrackedCheck.cs" />
-    <Compile Include="Data\HintHelper.cs" />
-    <Compile Include="Data\UIUtils.cs" />
-    <Compile Include="Data\HintData.cs" />
-    <Compile Include="Data\HintRegion.cs" />
-    <Compile Include="Data\HintTypeSettingsList.cs" />
-    <Compile Include="Data\SongFormatting.cs" />
-    <Compile Include="Data\Records.cs" />
-    <Compile Include="Data\HintSuggestion.cs" />
-    <Compile Include="Data\HintType.cs" />
-    <Compile Include="Data\SavedHint.cs" />
     <Compile Include="BroadcastView.xaml.cs">
       <DependentUpon>BroadcastView.xaml</DependentUpon>
     </Compile>
@@ -92,18 +76,9 @@
     <Compile Include="HintsUI\PathOrFoundItem.xaml.cs">
       <DependentUpon>PathOrFoundItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HintsUI\ItemCountBox.cs" />
-    <Compile Include="HitListHintManager.cs" />
-    <Compile Include="Data\Extensions.cs" />
-    <Compile Include="Data\SpoilerSettings.cs" />
-    <Compile Include="Data\SavedProgress.cs" />
-    <Compile Include="Data\SavedItem.cs" />
-    <Compile Include="Data\HitListGoal.cs" />
-    <Compile Include="Data\VialColor.cs" />
     <Compile Include="HintsUI\SelectableHintItem.xaml.cs">
       <DependentUpon>SelectableHintItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Item.xaml.cs" />
     <Compile Include="ItemBackground.xaml.cs">
       <DependentUpon>ItemBackground.xaml</DependentUpon>
     </Compile>
@@ -116,28 +91,15 @@
     <Compile Include="ProgressiveItem.xaml.cs">
       <DependentUpon>ProgressiveItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Data\MapToRegion.cs" />
-    <Compile Include="DataSaver.cs" />
-    <Compile Include="Data\ImportantCheckList.cs" />
-    <Compile Include="Data\Region.cs" />
-    <Compile Include="Data\RegionName.cs" />
-    <Compile Include="Data\JSONKeyMappings.cs" />
-    <Compile Include="Data\ImportantCheck.cs" />
-    <Compile Include="Data\PointValues.cs" />
-    <Compile Include="Data\ItemType.cs" />
-    <Compile Include="Data\ItemName.cs" />
     <Compile Include="CollectibleItem.xaml.cs">
       <DependentUpon>CollectibleItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SpoilerParser.cs" />
-    <Compile Include="Toggles.cs" />
     <Compile Include="RegionGrid.xaml.cs">
       <DependentUpon>RegionGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="HintsUI\HintPanel.xaml.cs">
       <DependentUpon>HintPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WatermarkTextBox.cs" />
     <Page Include="ColoredBarrelPadImages.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
