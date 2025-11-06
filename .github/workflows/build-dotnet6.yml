@@ -16,25 +16,20 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
-
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.3
-
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.2.0
-
       - name: Restore packages
         run: nuget restore ${{ env.SOLUTION_FILE }}
-
       - name: Build solution
         run: msbuild ${{ env.SOLUTION_FILE }} /p:Configuration=Release /p:Platform="Any CPU"
-
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: Windows Executable
           path: |
-            **/bin/Release/*
+            **/bin/Windows/*
   build-linux:
     runs-on: ubuntu-latest
     steps:
@@ -47,8 +42,8 @@ jobs:
       - name: Restore packages
         run: dotnet restore ${{ env.SOLUTION_FILE }}
       - name: Build solution
-        run: dotnet build ${{ env.SOLUTION_FILE }} --configuration ${{ env.CONFIGURATION }} --runtime linux-x64
+        run: dotnet build ${{ env.SOLUTION_FILE }} --configuration Release --runtime linux-x64
       - uses: actions/upload-artifact@v4
         with:
-          name: Linux-Binaries
-          path: '**/bin/${{ env.CONFIGURATION }}/net*/linux-x64/*'
+          name: Linux Binary
+          path: '**/bin/linux-x64/*'
